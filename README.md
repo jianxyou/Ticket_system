@@ -1,14 +1,18 @@
 # Ticket_system
 
-Project Introduction
+**Project Introduction**
 This project primarily entails the implementation of a booking system for plane tickets, train tickets, and boat tickets. The system is composed of two main actors: the 'System' and the 'Customer'.
 
 Customers have the capability to browse, purchase, and exchange tickets, while the System manages the listings, pricing, and organization of a wide range of tickets. These two distinct actors interact with the system in unique ways, based on their roles and features.
 
-Architecture & Design Patterns
+
+
+**Architecture & Design Patterns**
 Despite its straightforward facade, this project encloses a potent core. About ten different design patterns have been employed to realize this project, including the Visitor, Command, and Constructor patterns, amongst others. These design patterns are used to ensure that our system satisfies the SOLID principles while possessing strong generalization abilities and excellent handling capacity.
 
-Usage
+
+
+__Usage__
 Here's a quick guide on how to compile and run the system:
 
 Locate the system source codes in the System/src directory.
