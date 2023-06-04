@@ -1,0 +1,209 @@
+
+<html>
+    <head>
+        <title>IFT3911 DM3</title>
+        <style type="text/css">
+            table
+            {
+                border: outset 2px black;
+                border-collapse: collapse;
+            }
+            th
+            {
+                border-bottom: double 2px black;
+            }
+            td
+            {
+                border-bottom: solid 1px black;
+            }
+            .first_col
+            {
+                border-right: double 2px black;
+            }
+            body {
+            padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            IFT 3911 - Devoir 3</h1>
+        <h2>
+            Information générale</h2>
+        <p>
+            <span style="font-weight: bold;">Nom: </span>Jianxin You
+            <br />
+            <span style="font-weight: bold;">Matricule: </span>20134401
+            <br />
+            <span style="font-weight: bold;">Courriel: </span> jianxin.you@umontreal.ca
+            <br />
+            <span style="font-weight: bold;">temps mis: </span>40 heures
+        </p>
+    
+        <p>
+            <span style="font-weight: bold;">Nom: </span> Sofiia Shton
+            <br />
+            <span style="font-weight: bold;">Matricule: </span>20254200
+            <br />
+            <span style="font-weight: bold;">Courriel: </span>sofiia.shton@umontreal.ca
+            <br />
+            <span style="font-weight: bold;">temps mis: </span>40 heures
+        </p>
+        
+
+
+        <h2>
+            Distribution des tâches</h2>
+        <p>
+            <span style="font-weight: bold;">Soumetteur: </span>Jianxin You
+        </p>
+        <table cellpadding="7px">
+            <thead>
+                <tr>
+                    <th class="first_col">
+                        Tâche
+                    </th>
+                    <th>
+                        JianXin
+                    </th>
+                    <th>
+                        Sofia
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="first_col">
+                        Tout
+                    </td>
+                    <td>
+                        50%
+                    </td>
+                    <td>
+                        50%
+                    </td>
+                </tr>
+    
+            </tbody>
+        </table>
+
+
+
+
+        <h2>
+            Diagramme de classe pour le patron de fabriques 
+        </h2>
+        <img src="Design/fabrique/fabrique.png" alt="Description of the image" width="1000" height="600">
+
+        
+        <h2>
+            Diagramme de séquence ou de collaboration pour le patron de fabriques
+        </h2>
+        <img src="Design/fabrique/fabrique_SD.png" alt="Description of the image" width="1000" height="600">
+
+        <h2>
+            Diagramme de classe pour le patron du singleton 
+        </h2>
+        <img src="Design/singleton/singleton.png" alt="Description of the image" width="1000" height="600">
+
+        <h2>
+            Diagramme de classe pour le patron d'état
+        </h2>
+        <img src="Design/state/state.png" alt="Description of the image" width="1000" height="600">
+        
+        <h2>
+            Diagramme de séquence ou de collaboration pour le patron d'état
+        </h2>
+        <img src="Design/state/state_SD.png" alt="Description of the image" width="1000" height="600">
+
+        <h2>
+            Diagramme de classe pour le patron de l'observateur
+        </h2>
+        <img src="Design/observer/observer.png" alt="Description of the image" width="1000" height="600">
+
+
+        <h2>
+            Diagramme de séquence ou de collaboration pour le patron de l'observateur 
+        </h2>
+        <img src="Design/observer/observateur_SD.png" alt="Description of the image" width="1000" height="600">
+
+        <h2>
+            Diagramme de classe pour le patron de commande
+        </h2>
+        <img src="Design/command/command.png" alt="Description of the image" width="1000" height="600">
+
+
+        <h2>
+            Diagramme de séquence ou de collaboration pour le patron de commande
+        </h2>
+        <img src="Design/command/command_SD.png" alt="Description of the image" width="1000" height="600">
+
+        <h2>
+            Diagramme de classe pour le patron du visiteur
+        </h2>
+            <img src="Design/visitor/visitor.png" alt="Description of the image" width="1000" height="600">
+
+        <h2>
+            Diagramme de séquence ou de collaboration pour le patron du visiteur
+        </h2>
+        <img src="Design/visitor/visitor_SD.png" alt="Description of the image" width="1000" height="600">
+
+        <h2>
+            Diagramme de classe pour les deux patrons de conception additionnels 
+            <h3> 1. Patron de stratégy</h3>
+            <img src="Design/strategy/strategy.png" alt="Description of the image" width="1000" height="600">
+            <h3> 2. Patron de constructeur</h3>
+            <img src="Design/constructor/constructor.png" alt="Description of the image" width="1000" height="600">
+        </h2>
+
+
+        <h2>
+            Diagramme du paquet
+        </h2>
+            <img src="Design/package-diagram.png" alt="Description of the image" width="1000" height="600">
+
+        <br>
+        
+        <h2>
+            Justification
+        </h2>
+        Dans cette discussion, nous allons analyser la qualité du design de chacun des patrons de conception utilisés dans ce projet.
+        <br><br>
+
+        <b>Fabrique</b> :
+        Le patron de fabrique permet une meilleure modularité et flexibilité, en séparant la logique de création d'instances des entités de voyage de leur utilisation. Cela améliore également la maintenabilité du code en respectant le DIP. En utilisant ce patron, on peut réduire la dépendance entre les différents modules de l'application, ce qui réduit le couplage et favorise l'agrégation.
+
+        <br><br>
+        <b>Singleton</b> :
+        Ce patron assure qu'il n'y a qu'une seule instance de chaque fabrique dans l'application. Ça rendre le code plus coherent. En utilisant ce patron, le SRP est respecté.
+        <br><br>
+
+        <b>État</b> : 
+        Le patron d'état facilite la gestion des différentes positions d'un siège ou d'une cabine. Il range la logique des positions dans des groupes séparés. Cela rend le code plus facile à lire et à modifier, et suit le SRP et le OCP. En utilisant ce patron, les différentes parties du programme ne sont pas trop liées, ce qui facilite l'ajout de nouvelles fonctions.
+        <br><br>
+
+        <b>Observateur</b> :
+        Le patron d'observateur permet de mettre à jour automatiquement les parties visibles de l'application lorsque quelque chose change dans les informations de base. Cela aide à garder toutes les parties de l'application en accord les unes avec les autres. Le patron suit le SRP en faisant en sorte que chaque partie de l'application soit responsable de ce qu'elle affiche. En utilisant ce patron, les différentes parties de l'application ne dépendent pas trop les unes des autres, ce qui facilite l'ajout de nouvelles fonctions.
+        <br><br>
+
+        <b>Commande</b> :
+        Le patron de commande facilite la gestion des actions de l'administrateur, en permettant d'annuler ces opérations. Cela respecte le SRP en garantissant que chaque commande est responsable de sa propre action. En utilisant ce patron, on peut réduire la dépendance entre les différents modules de l'application. Ça réduit le couplage et favorise l'agrégation.
+        <br><br>
+
+        <b>Visiteur</b> :
+        Le patron de visiteur permet d'afficher les entités de voyage de manière différente selon le contexte, en séparant la logique d'affichage de la structure des données. Ça améliore la lisibilité et la maintenabilité du code en respectant le SRP et le OCP. En utilisant ce patron, on peut également réduire la dépendance entre les différents modules de l'application, ce qui réduit le couplage et favorise l'agrégation.
+        <br><br>
+        
+        <b>Stratégie</b>:
+        Tout d'abord, il permet une grande flexibilité en permettant à l'utilisateur de choisir entre différentes stratégies de paiement sans avoir à modifier le code source du système de paiement lui-même. Cela rend le système plus modulaire et évolutif.
+        <br><br>
+        De plus, le pattern "Strategy" respecte le SRP en permettant à chaque stratégie de paiement d'être encapsulée dans sa propre classe. Cela facilite la maintenance du code et permet de résoudre rapidement les problèmes liés à une stratégie de paiement spécifique.
+        <br><br>
+        En utilisant ce pattern, on peut également réduire la dépendance entre les différents modules du système de paiement, ce qui réduit le couplage (coupling) et favorise l'agrégation (aggregation).
+        <br><br>
+
+        <b>Construteur : </b>
+        Ce pattern vous permet de créer des instances de classes avec différentes options de configuration, ce qui simplifie l'écriture et l'utilisation du code. Chaque route a des composants différents, et en utilisant le pattern Constructeur, on utilise le constructeur approprié pour créer différentes routes avec différents composants.
+<br><br> De plus, ce patron respect le principe de SRP, car chaque constructeur est spécifiquement responsable de la création d'un type de route. Cela contribue à maintenir la lisibilité et la maintenabilité du code.
+<br><br> Le pattern Constructeur peut également vous aider à respecter le OCP, car on peut ajouter de nouveaux types de routes simplement en créant un nouveau constructeur sans avoir à modifier le code existant.
+Il réduire le couplage entre les modules en limitant les dépendances et améliorer l'agrégation en regroupant les composants de route dans une même classe.
